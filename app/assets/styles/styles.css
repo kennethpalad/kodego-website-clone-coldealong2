@@ -1,10 +1,4 @@
-@import 'normalize.css';
-
-body {
-  color: orange;
-}
-
-a, a:active {
-  text-decoration: none;
-  color: inherit;
-}
+@import "normalize.css";
+@import "./base/_global";
+@import "./modules/_container";
+@import "./modules/_header";
