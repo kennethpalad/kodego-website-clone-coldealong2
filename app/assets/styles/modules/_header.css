@@ -15,5 +15,9 @@
 
   &__user-links {
     float: right;
+
+    & > a:first-of-type {
+      margin-right: 1rem;
+    }
   }
 }
