@@ -3,7 +3,13 @@
 
   &__card-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @mixin atLaptop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     &--t-margin {
       margin-top: 2rem;
@@ -15,6 +21,11 @@
     height: 19rem;
     width: 17rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.2rem;
+
+    @mixin atLaptop {
+      margin-bottom: 0;
+    }
   }
 
   &__card-text-content {
