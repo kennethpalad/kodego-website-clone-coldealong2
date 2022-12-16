@@ -9,4 +9,8 @@
   &--padded {
     padding: 1rem;
   }
+
+  &--p-bottom {
+    padding-bottom: 2.5rem;
+  }
 }
