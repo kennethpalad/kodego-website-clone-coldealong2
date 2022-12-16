@@ -1,0 +1,18 @@
+.footer {
+  background: $secondaryBlue;
+  color: #c7c7cc;
+
+  &__container {
+    display: flex;
+  }
+
+  &__heading {
+    display: block;
+    color: #fff;
+    margin-bottom: 1em;
+  }
+
+  &__logo {
+    filter: grayscale(1) invert(1) brightness(100);
+  }
+}
