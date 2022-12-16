@@ -49,9 +49,33 @@
     }
   }
 
+  &__mobile-nav-toggle:checked ~ &__mobile-nav-trigger {
+    background: transparent;
+
+    &::before {
+      transform: rotate(45deg) translateY(-100%);
+      transform-origin: 0;
+    }
+
+    &::after {
+      transform: rotate(-45deg) translateY(100%);
+      transform-origin: 0;
+    }
+  }
+
   &__logo {
     @mixin atLaptopLarge {
       transform: scale(0.7);
+    }
+  }
+
+  &__mobile-nav-toggle:checked ~ &__nav {
+    margin-right: 0;
+    visibility: visible;
+    opacity: 1;
+
+    &::before {
+      margin-left: -150%;
     }
   }
 

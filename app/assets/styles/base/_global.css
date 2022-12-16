@@ -13,3 +13,7 @@ a:active {
 li {
   list-style: none;
 }
+
+body {
+  overflow: hidden;
+}
