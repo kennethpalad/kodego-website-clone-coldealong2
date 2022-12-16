@@ -56,16 +56,19 @@
   }
 
   &__nav {
-    border: 1px solid black;
-    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     background: #fff;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
     padding: 5rem 2.5rem 2.5rem 5rem;
+    margin-right: -100vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in;
 
     &::before {
       z-index: -1;
@@ -73,13 +76,10 @@
       content: "";
       display: block;
       background: rgba(0, 0, 0, 0.4);
-      height: 100vh;
-      width: 100vw;
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
-      margin-left: -50%;
     }
 
     & li {
