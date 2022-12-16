@@ -10,10 +10,12 @@ a:active {
   color: inherit;
 }
 
-li {
-  list-style: none;
+ul {
+  list-style-position: inside !important;
+  list-style-type: none !important;
+  padding-left: 0 !important;
 }
 
-body {
-  overflow: hidden;
+li {
+  list-style: none;
 }
